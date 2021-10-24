@@ -8,7 +8,7 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
 app.get("/", (req, res, next) => {
-    res.render("index", {
+    res.render("orderDone", {
         order_id: nanoid(20),
         dataUser: {
             name: "rikha putri maesha",
